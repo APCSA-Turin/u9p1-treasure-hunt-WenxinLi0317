@@ -47,12 +47,20 @@ public class Game{
     }
 
     public void initialize(){
-
-        //to test, create a player, trophy, grid, treasure, and enemies. Then call placeSprite() to put them on the grid
-   
+         
     }
 
     public static void main(String[] args) {
+        Grid grid;
+        Player player;
+        grid = new Grid(10);
+        player = new Player(5, 0);
+        grid.placeSprite(player);
+        System.out.println(player.getRowCol(10));
+        grid.display();
+    
+        
+        
         
     }
 }
