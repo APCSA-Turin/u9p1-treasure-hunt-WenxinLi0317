@@ -3,15 +3,16 @@ package com.example.project;
 public class Sprite {
     private int x, y;
 
+    //set the x and y coordinate of the Sprite constructor
     public Sprite(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    
-    public int getX(){return x;}//placeholder
+    //getter method of sprite's x and y coordinate
+    public int getX(){return x;} 
     public int getY(){return y;}
-
+    //setter method of sprite's x and y coordinate
     public void setX(int newX){x = newX;}
     public void setY(int newY){y = newY;}
 
@@ -19,7 +20,7 @@ public class Sprite {
         return "" + "(" + x + "," + y +")";
     }
 
-    //////
+
     public String getRowCol(int size){ //returns the row and column of the sprite -> "[row][col]"
         return "" + "[" +  (size-1-y)  +"]" + "[" +  x +"]";
     }
